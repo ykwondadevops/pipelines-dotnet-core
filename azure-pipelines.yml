@@ -18,5 +18,9 @@ stages:
       steps:
         - script: |
             echo "Restore project dependancies"
-
+- stage: Test
+  displayName: 'Test Stage'
+  jobs:
+    - job: TestJob
+      displayName: 'Test Job'
 
